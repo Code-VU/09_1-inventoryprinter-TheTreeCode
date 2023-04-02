@@ -1,11 +1,20 @@
 stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'ring': 1, 'apple': 12}
 
 def displayInventory(inventory):
+    print('Inventory:')
+    totalinventory = 0
+    for item in inventory:
+        print(inventory[item], item)
+        totalinventory += inventory[item]
+    print('Total items: {totalinvetory}')
 
 
 if __name__ == "__main__":
     displayInventory(stuff)
 
+    # itemlookup = input('Which item would you like to check?: ')
+    # result = inventory.get(itemlookup.lower(), 'Item not found!')
+    # print('Inventory:\n'+str(result), itemlookup)
 
 '''
 Assignment
